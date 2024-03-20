@@ -14,7 +14,9 @@ public class ServicesHooks {
     @Before
     public void initializeTest() {
         startDriver = new DriverManager();
-        startDriver.startDriver();
+        System.setProperty("webdriver.chrome.driver", "BDD_Cucumber_Tests_for_mega-image.ro/chromedriver/chromedriver.exe");
+
+        startDriver.startDriverWithSpecificVersion("122.0.6261.69");
     }
 
     @After
