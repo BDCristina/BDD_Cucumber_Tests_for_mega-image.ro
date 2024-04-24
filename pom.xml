@@ -72,8 +72,13 @@
                     <encoding>UTF-8</encoding>
                     <source>1.8</source>
                     <target>1.8</target>
-                </configuration>
-                <executions>
+                </configuration>    
+            </plugin>
+            <plugin>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.6.0</version>
+            <executions>
                 <execution>
                     <id>execution</id>
                     <phase>verify</phase>
@@ -85,8 +90,8 @@
                         <!-- Alte configurații opționale pot fi adăugate aici -->
                     </configuration>
                 </execution>
-            </executions>     
-            </plugin>
+            </executions>
+        </plugin>      
         </plugins>
     </build>
 </project>
